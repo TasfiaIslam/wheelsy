@@ -19,7 +19,7 @@ git clone https://github.com/TasfiaIslam/wheelsy.git
 
 ```bash
 - Frontend 
-cd frontend
+cd wheelsyfrontend
 npm run dev
 
 #Then visit http://localhost:3000 to view the app.
