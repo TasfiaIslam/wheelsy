@@ -17,27 +17,27 @@ const  About = () => {
             <div className="container mx-auto px-4">
                 <div className="py-5 my-5">
                     <div>
-                        <p className="text-center text-lg font-semibold text-pink-800">Wheelsy</p>
+                        <p className="text-center text-lg font-semibold text-red-500">Wheelsy</p>
                         <h1 className="text-center font-semibold text-4xl text-black py-4">Why Choose Us</h1>
                         <p className="text-center px-36">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
                     </div>
                     <div className="py-8 grid grid-cols-2 gap-4 md:grid-cols-3">
                         <div className="flex flex-col px-16">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="text-pink-800 fill-current h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-red-500 fill-current h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                             <h2 className="py-4 font-semibold text-lg text-black">Why Choose Us</h2>
                             <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div className="flex flex-col px-16">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="text-pink-800 fill-current h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-red-500 fill-current h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                             <h2 className="py-4 font-semibold text-lg text-black">Why Choose Us</h2>
                             <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div className="flex flex-col px-16">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="text-pink-800 fill-current h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-red-500 fill-current h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                             <h2 className="py-4 font-semibold text-lg text-black">Why Choose Us</h2>

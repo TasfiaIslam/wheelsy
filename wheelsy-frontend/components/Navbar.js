@@ -8,9 +8,9 @@ const Navbar = () => {
                 <Image src="/car-logo.jpg" width={50} height={50} className="rounded-full h-50 w-50 filter transition duration-300 hover:drop-shadow-md"/>
             </div>
     
-            <Link  href="/"><a className="mx-4 my-3 text-pink-800">Home</a></Link>
-            <Link  href="/about"><a className="mx-4 my-3 text-pink-800">About</a></Link>
-            <Link  href="/cars"><a className="mx-4 my-3 text-pink-800">Car Listing</a></Link>
+            <Link  href="/"><a className="mx-4 my-3 text-red-500">Home</a></Link>
+            <Link  href="/about"><a className="mx-4 my-3 text-red-500">About</a></Link>
+            <Link  href="/cars"><a className="mx-4 my-3 text-red-500">Car Listing</a></Link>
           
         </nav>
 

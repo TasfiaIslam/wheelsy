@@ -33,7 +33,7 @@ function CarList(props) {
       if (searchQuery.length != 0) {
         return (
             <div className="px-4 py-4">
-                <h1 className="text-6xl my-4 text-center bg-gradient-to-r text-transparent bg-clip-text from-purple-400 to-pink-500">All Cars</h1>
+                <h1 className="text-6xl my-4 text-center text-black">All Cars</h1>
                 <div className="grid grid-cols-3  gap-4 xs:grid-cols-2">
                     {searchQuery.map((car) => (
                         <div className="max-w-sm rounded overflow-hidden shadow-md my-4" key={car.id}>
@@ -42,15 +42,15 @@ function CarList(props) {
                                     <img src={`${process.env.NEXT_PUBLIC_API_URL}${car.img_url[0].url}`} className="object-cover h-48 w-full transition duration-300 filter grayscale-0 hover:grayscale" />
                                     
                                     <div className="px-6 py-4">
-                                        <div className="font-bold text-xl mb-2 text-blue-600">{car.make} {car.model}</div>
+                                        <div className="font-bold text-xl mb-2 text-red-500">{car.make} {car.model}</div>
                                         <p className="text-gray-700 text-base">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                                         </p>
                                     </div>
                                     <div className="px-6 pt-4 pb-2">
-                                        <span className="inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#brandnew</span>
-                                        <span className="inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                        <span className="inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#sports</span>
+                                        <span className="inline-block bg-gray-50 shadow-md rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#brandnew</span>
+                                        <span className="inline-block bg-gray-50 shadow-md rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                                        <span className="inline-block bg-gray-50 shadow-md rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#sports</span>
                                     </div>
                                 </a>
                             </Link>
