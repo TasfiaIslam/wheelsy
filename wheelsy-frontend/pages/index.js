@@ -27,7 +27,7 @@ export default function Home() {
                 </button>
             </div>
             <div class="w-full md:w-1/2 h-64 md:h-auto overflow-hidden">
-                <img className="h-full object-cover" src="https://image.freepik.com/free-photo/front-view-generic-brandless-moder-car_110488-502.jpg"/>
+                <img className="h-full object-cover" src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"/>
             </div>
           </div>
         </div>
@@ -36,12 +36,12 @@ export default function Home() {
         <div className="bg-gray-900">
           <div className="md:w-11/12 mx-auto md:grid md:grid-flow-col md:gap-4 md:justify-center md:items-center md:p-4 md:h-48">
               <div className="p-4 md:p-0">
-                <p className="md:my-8 text-white text-2xl font-bold">Great Muscle Car</p>
-                <p className="text-gray-300 md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
+                <p className="md:my-4 text-white text-2xl font-bold">Great Muscle Car</p>
+                <p className="mb-4 text-gray-300 md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
               </div>
               <div className="p-4 md:p-0">
-                <p className="md:my-8 text-white text-2xl font-bold">Classic Stylish</p>
-                <p className="mb-2 text-gray-300 md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
+                <p className="md:my-4 text-white text-2xl font-bold">Classic Stylish</p>
+                <p className="mb-4 text-gray-300 md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
               </div>
           </div>
         </div>
@@ -50,12 +50,12 @@ export default function Home() {
         <div className="">
           <div className="md:w-11/12 mx-auto  md:py-14 flex flex-wrap">
               <div className="flex flex-col w-full md:w-1/2 justify-center items-center md:pr-16 pb-4 md:pb-0">
-                  <p className="mt-2 md:mt-0 text-gray-500 uppercase w-full">About Us</p>
-                  <h1 className="py-4 text-xl md:text-2xl font-bold md:font-sans text-black">Wheelsy is the best place to get your dream car</h1>
+                  <p className=" md:mt-0 text-gray-500 uppercase w-full">About Us</p>
+                  <h1 className="w-full py-4 text-xl md:text-2xl font-bold md:font-sans text-black">Wheelsy is the best place to get your dream car</h1>
                   <p className="text-gray-700 text-opacity-75 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
               </div>
               <div className="w-full md:w-1/2  flex justify-center items-center">
-                  <img className="h-64 md:h-80 w-full shadow-lg object-cover" src="https://image.freepik.com/free-photo/yellow-sport-car-with-black-autotuning-road_114579-5051.jpg"   />
+                  <img className="h-64 md:h-80 w-full shadow-lg object-cover" src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"   />
               </div>
           </div>
         </div>
@@ -64,13 +64,13 @@ export default function Home() {
         <div className="p-4 text-center bg-gray-50">
           <p className="text-xl font-bold mb-4 md:mb-8">Our vendor</p>
           <ul className="text-gray-700 text-opacity-75 uppercase md:inline-flex md:space-x-4 md:mb-8">
-            <li>Hondo</li>
-            <li>Fort</li>
-            <li>Toyoto</li>
-            <li>Porce</li>
-            <li>Mustibisha</li>
-            <li>Dastin</li>
-            <li>Sizuka</li>
+            <li className="hover:text-yellow-500">Hondo</li>
+            <li className="hover:text-yellow-500">Fort</li>
+            <li className="hover:text-yellow-500">Toyoto</li>
+            <li className="hover:text-yellow-500">Porce</li>
+            <li className="hover:text-yellow-500">Mustibisha</li>
+            <li className="hover:text-yellow-500">Dastin</li>
+            <li className="hover:text-yellow-500">Sizuka</li>
           </ul>
         </div>
 
