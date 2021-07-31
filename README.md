@@ -1,5 +1,5 @@
 
-# WEBSITE FOR CARS
+# Wheelsy 
 
 This Web App provides car buyers and sellers the best platform. Browse new cars online and get full information about car and schedule test drive. Browse new cars online and get full information about car and schedule test drive.
 
@@ -19,7 +19,7 @@ git clone https://github.com/TasfiaIslam/wheelsy.git
 
 ```bash
 - Frontend 
-cd wheelsyfrontend
+cd wheelsy-frontend
 npm run dev
 
 #Then visit http://localhost:3000 to view the app.
@@ -33,6 +33,16 @@ npm run develop
 
 #Then visit http://localhost:1337/admin to view the backend.
 ```
+## Quick View
+- Landing Page
+![Landing Page](project-screenshots/landingpage.png)
+---
+- Car Listing
+![Cars](project-screenshots/cars.png)
+---
+- About 
+![About](project-screenshots/about.png)
+
 
 ## Features
 
