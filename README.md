@@ -16,23 +16,22 @@ This Web App provides car buyers and sellers the best platform. Browse new cars 
 clone the project
 git clone https://github.com/TasfiaIslam/wheelsy.git
 ```
-
-```bash
-- Frontend 
-cd wheelsy-frontend
-npm run dev
-
-#Then visit http://localhost:3000 to view the app.
-```
-
 - Backend
-
 ```bash
 cd backend
 npm run develop
 
 #Then visit http://localhost:1337/admin to view the backend.
 ```
+
+- Frontend 
+```bash
+cd wheelsy-frontend
+npm run dev
+
+#Then visit http://localhost:3000 to view the app.
+```
+
 ## Quick View
 - Landing Page
 ![Landing Page](project-screenshots/landingpage.png)
