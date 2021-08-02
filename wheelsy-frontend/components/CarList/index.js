@@ -12,6 +12,7 @@ const QUERY = gql`
       make
       year
       hp
+      price
       img_url {
         url
       }
@@ -21,15 +22,17 @@ const QUERY = gql`
 
 function CarList(props) {
     const { loading, error, data } = useQuery(QUERY);
+    const searchData = props.searchData;
+
     if (error) return "Error loading cars";
-    //if cars are returned from the GraphQL query, run the filter query
-    //and set equal to variable carsearch
+
     if (loading) return <h1>Fetching</h1>;
     if (data.cars && data.cars.length) {
       //searchQuery
       const searchQuery = data.cars.filter((query) =>
-        query.model.toLowerCase().includes(props.search) ||
-        query.make.toLowerCase().includes(props.search)
+        (query.make.toLowerCase().includes(searchData.name) ||
+        query.model.toLowerCase().includes(searchData.name) ) &&
+        (query.price >= (searchData.minPrice) && query.price <= (searchData.maxPrice))
       );
       if (searchQuery.length != 0) {
         return (
@@ -47,6 +50,7 @@ function CarList(props) {
                                         <p className="text-gray-700 text-base">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                                         </p>
+                                        <p>Price {car.price}</p>
                                     </div>
                                     <div className="px-6 pt-4 pb-2">
                                         <span className="inline-block bg-gray-50 shadow-md rounded-full px-2 md:px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#brandnew</span>
