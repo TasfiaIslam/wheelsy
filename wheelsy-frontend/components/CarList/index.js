@@ -28,7 +28,8 @@ function CarList(props) {
     if (data.cars && data.cars.length) {
       //searchQuery
       const searchQuery = data.cars.filter((query) =>
-        query.model.toLowerCase().includes(props.search)
+        query.model.toLowerCase().includes(props.search) ||
+        query.make.toLowerCase().includes(props.search)
       );
       if (searchQuery.length != 0) {
         return (
