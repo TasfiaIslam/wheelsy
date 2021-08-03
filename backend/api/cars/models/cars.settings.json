@@ -38,6 +38,9 @@
     },
     "price": {
       "type": "float"
+    },
+    "tags": {
+      "collection": "tags"
     }
   }
 }

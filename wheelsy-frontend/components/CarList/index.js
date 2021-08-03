@@ -16,6 +16,9 @@ const QUERY = gql`
       img_url {
         url
       }
+      tags{
+        tagname
+      }
     }
   }
 `;
@@ -37,7 +40,7 @@ function CarList(props) {
       if (searchQuery.length != 0) {
         return (
             <div className="px-4 pb-2">
-                <h1 className="text-4xl my-4 text-center text-black">All Cars</h1>
+                {/* <h1 className="text-4xl my-4 text-center text-black">All Cars</h1> */}
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                     {searchQuery.map((car) => (
                         <div className="max-w-sm rounded overflow-hidden shadow-md my-4" key={car.id}>
@@ -47,15 +50,17 @@ function CarList(props) {
                                     
                                     <div className="px-6 py-4">
                                         <div className="font-bold text-xl mb-2 text-red-500">{car.make} {car.model}</div>
-                                        <p className="text-gray-700 text-base">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                        <p className="text-gray-700 text-base mb-2">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                         </p>
-                                        <p>Price {car.price}</p>
+                                        <p className="text-sm text-gray-700 mb-2">{car.hp} HP</p>
+                                        <p className="text-xl text-gray-700 font-bold">$ {car.price}</p>
                                     </div>
-                                    <div className="px-6 pt-4 pb-2">
-                                        <span className="inline-block bg-gray-50 shadow-md rounded-full px-2 md:px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#brandnew</span>
-                                        <span className="inline-block bg-gray-50 shadow-md rounded-full px-2 md:px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                                        <span className="inline-block bg-gray-50 shadow-md rounded-full px-2 md:px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#sports</span>
+                                    
+                                    <div className="px-6 pt-2 pb-2">
+                                      {car.tags.map((tag) => (
+                                        <span className="inline-block bg-gray-50 shadow-md rounded-full px-2 md:px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{tag.tagname}</span>
+                                      ))}
                                     </div>
                                 </a>
                             </Link>
