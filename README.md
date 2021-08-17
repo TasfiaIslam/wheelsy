@@ -37,7 +37,7 @@ npm run dev
 ![Landing Page](project-screenshots/landingpage.png)
 ---
 - Car Listing
-![Cars](project-screenshots/cars.png)
+![Cars](project-screenshots/car-listing.png)
 ---
 - About 
 ![About](project-screenshots/about.png)
@@ -47,3 +47,5 @@ npm run dev
 
 * Show all cars listing
 * View individual car details
+* Search cars
+* Find cars with Price Range
