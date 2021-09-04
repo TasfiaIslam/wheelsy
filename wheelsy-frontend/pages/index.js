@@ -12,23 +12,27 @@ export default function Home() {
         {/* 1st div */}
         <div className="bg-black">
           <div className="md:w-11/12 mx-auto flex flex-wrap overflow-hidden">
-            <div className="w-full md:w-1/2  md:h-auto overflow-hidden md:mt-12 p-4">
-                <p className="text-white font-bold md:font-sans text-xl md:text-4xl mb-8">Research. Compare. Find What's Right for You.</p>
-                <p className="text-gray-300 md:text-justify">Use our extensive database to research and compare trims, photos, and reviews for every make and model, so you can find the car that fits your life.</p>
-                <div className="mt-8">
-                  <span className="text-gray-300 text-xs">Starting from</span>
-                  <h3 className="text-white text-xl font-bold">$ 599.999</h3>
+            <div className="hero-inner-wrapper flex flex-row justify-end">
+              <div className="w-1/2">
+                <div className="hero-inner-text">
+                  <p className="font-bold md:font-sans text-xl md:text-4xl mb-8">Research. Compare. Find What's Right for You.</p>
+                  <p className=" md:text-justify">Use our extensive database to research and compare trims, photos, and reviews for every make and model, so you can find the car that fits your life.</p>
+                  <div className="mt-8">
+                    <span className=" text-xs">Starting from</span>
+                    <h3 className=" text-xl font-bold text-red-500 ">$ 599.999</h3>
+                  </div>
+                  <button class="mt-8 bg-white hover:bg-gray-100 text-red-500 font-semibold py-2 px-4 border border-gray-400 rounded shadow inline-flex items-center">
+                    <span>Discover More</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </button>
                 </div>
-                <button class="mt-8 bg-white hover:bg-gray-100 text-red-500 font-semibold py-2 px-4 border border-gray-400 rounded shadow inline-flex items-center">
-                  <span>Discover More</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </button>
+              </div>
             </div>
-            <div class="w-full md:w-1/2 h-64 md:h-auto overflow-hidden">
-                <img className="h-full object-cover" src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"/>
-            </div>
+            {/* <div class="w-full md:w-1/2 h-64 md:h-auto overflow-hidden">
+                <img className="h-full object-cover" src=""/>
+            </div> */}
           </div>
         </div>
 

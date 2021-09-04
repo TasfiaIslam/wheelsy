@@ -1,6 +1,5 @@
 import Layout from '../components/Layout'
-// import '../styles/globals.css'
-import 'tailwindcss/tailwind.css'
+import '../styles/globals.css'
 import React from "react";
 import App from "next/app";
 import withData from "../lib/apollo";

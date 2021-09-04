@@ -1,46 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
-body {
-  background: #f2f2f2;
-  color: #333;
-  font-family: "Nunito";
-}
-a {
-  color: #333;
-  text-decoration: none;
-}
-.content {
-  max-width: 960px;
-  margin: 0 auto;
-}
-nav {
-  margin: 10px auto 80px;
-  padding: 10px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border-bottom: 1px solid #ddd;
-}
-nav a {
-  margin-left: 12px;
-}
-nav .logo {
-  margin-right: auto;
-}
-footer {
-  display: block;
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 60px;
-  color: #777;
-  border-top: 1px solid #eaeaea;
-}
+@layer base {
+  a.nav-items{
+    @apply p-4 text-red-500 hover:text-red-800 cursor-pointer;
+  }
+  a.nav-items:last-child{
+    @apply pr-0;
+  }
+  .hero-inner-wrapper{
+    @apply w-full md:h-auto overflow-hidden py-4 bg-center bg-no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')
+  }
+  .hero-inner-text{
+    @apply text-white bg-white rounded-lg my-6 p-10 bg-opacity-20 backdrop-filter backdrop-blur-sm;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+  }
+  .footer-list{
+    @apply mt-4 flex flex-col items-start border-b-2 border-red-500 md:border-none;
+  }
+  .footer-list-label{
+    @apply text-gray-100 text-xl font-bold pb-2;
+  }
+  .footer-list ul{
 
-.not-found {
-  text-align: center;
-}
-.not-found a{
-  color: #4979ff;
-  text-decoration: underline;
+  }
+  .footer-list ul li{
+    @apply list-none cursor-pointer text-sm 2xl:text-base text-white hover:text-gray-400;
+  }
+  .footer-bottom-list{
+    @apply text-xs text-white text-center border-r;
+  }
+  .footer-bottom-list:last-child{
+    @apply border-r-0;
+  }
 }
