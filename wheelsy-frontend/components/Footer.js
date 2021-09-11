@@ -3,13 +3,13 @@ import Link from 'next/link';
 const Footer = () => {
     return ( 
         <footer className="w-full bg-gray-900">
-            <div className="w-11/12 2xl:w-5/6 mx-auto grid grid-cols-1 md:grid-cols-6 gap-1 py-4">
+            <div className="w-5/6 md:w-11/12 2xl:w-5/6 mx-auto grid grid-cols-2 md:grid-cols-6 gap-1 py-4 border-b border-gray-200">
                 <div className="footer-list">
                     <p className="footer-list-label">Address</p>
                     <p className="text-gray-300 text-sm 2xl:text-base">123 6th St.</p>
                     <p className="text-gray-300 text-sm 2xl:text-base">Melbourne, FL 32904</p>
                 </div>
-                <div className="footer-list">
+                <div className="footer-list"> 
                     <p className="footer-list-label">Features</p>
                     <ul>
                         <li><Link  href="/">Cool stuff</Link></li>
@@ -51,7 +51,7 @@ const Footer = () => {
                     </button>
                 </div>
             </div>
-            <div className="w-11/12 2xl:w-5/6 mx-auto grid grid-cols-8 justify-center">
+            <div className="footer-bottom">
                 <span className="footer-bottom-list">Privacy Policy</span>
                 <span className="footer-bottom-list">Privacy Policy</span>
                 <span className="footer-bottom-list">Privacy Policy</span>

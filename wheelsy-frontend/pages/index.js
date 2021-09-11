@@ -10,10 +10,10 @@ export default function Home() {
       <main className="flex-auto">
 
         {/* 1st div */}
-        <div className="bg-black">
-          <div className="md:w-11/12 mx-auto flex flex-wrap overflow-hidden">
+        <div className="hero-container">
+          <div className="hero-outer-wrapper">
             <div className="hero-inner-wrapper flex flex-row justify-end">
-              <div className="w-1/2">
+              <div className="w-full md:w-1/2 p-0">
                 <div className="hero-inner-text">
                   <p className="font-bold md:font-sans text-xl md:text-4xl mb-8">Research. Compare. Find What's Right for You.</p>
                   <p className=" md:text-justify">Use our extensive database to research and compare trims, photos, and reviews for every make and model, so you can find the car that fits your life.</p>
@@ -30,35 +30,32 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div class="w-full md:w-1/2 h-64 md:h-auto overflow-hidden">
-                <img className="h-full object-cover" src=""/>
-            </div> */}
           </div>
         </div>
 
         {/* 2nd div */}
         <div className="bg-gray-900">
-          <div className="md:w-11/12 mx-auto md:grid md:grid-flow-col md:gap-4 md:justify-center md:items-center md:p-4 md:h-48">
-              <div className="p-4 md:p-0">
-                <p className="md:my-4 text-white text-2xl font-bold">Great Muscle Car</p>
-                <p className="mb-4 text-gray-300 md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
+          <div className="w-5/6 md:w-11/12 mx-auto md:grid md:grid-flow-col md:gap-4 md:justify-center md:items-center md:p-4 md:h-48">
+              <div className="py-4 md:py-0">
+                <p className="md:py-4 text-white text-2xl font-bold">Great Muscle Car</p>
+                <p className="pb-4 text-gray-300 md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
               </div>
-              <div className="p-4 md:p-0">
-                <p className="md:my-4 text-white text-2xl font-bold">Classic Stylish</p>
-                <p className="mb-4 text-gray-300 md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
+              <div className="py-4 md:py-0">
+                <p className="md:py-4 text-white text-2xl font-bold">Classic Stylish</p>
+                <p className="pb-4 text-gray-300 md:leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
               </div>
           </div>
         </div>
 
         {/* 3rd div */}
         <div className="">
-          <div className="md:w-11/12 mx-auto  md:py-14 flex flex-wrap">
-              <div className="flex flex-col w-full md:w-1/2 justify-center items-center md:pr-16 pb-4 md:pb-0">
-                  <p className=" md:mt-0 text-gray-500 uppercase w-full">About Us</p>
-                  <h1 className="w-full py-4 text-xl md:text-2xl font-bold md:font-sans text-black">Wheelsy is the best place to get your dream car</h1>
-                  <p className="text-gray-700 text-opacity-75 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <div className="md:w-11/12 mx-auto my-8 md:my-14 flex flex-wrap">
+              <div className="flex flex-col w-5/6 mx-auto md:h-full md:w-1/2 justify-center items-center md:pr-16 py-4 md:py-0">
+                  <p className="mb-8 md:mt-0 text-gray-500 uppercase w-full">About Us</p>
+                  <h1 className="w-full text-xl md:text-2xl font-bold md:font-sans text-black">Wheelsy is the best place to get your dream car</h1>
+                  <p className="my-8 text-gray-700 text-opacity-75 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
               </div>
-              <div className="w-full md:w-1/2  flex justify-center items-center">
+              <div className="w-5/6 mx-auto md:w-1/2  flex justify-center items-center">
                   <img className="h-64 md:h-80 w-full shadow-lg object-cover" src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGNhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"   />
               </div>
           </div>
@@ -79,10 +76,10 @@ export default function Home() {
         </div>
 
         {/* 5th div - Get your fav car */}
-        <div className="p-4 flex flex-col justify-center items-center">
+        <div className="my-8 md:my-14 w-5/6 md:w-11/12 mx-auto flex flex-col justify-center items-center">
           <h3 className="text-xl md:text-2xl font-bold">Get your favorite car with us</h3>
-          <p className="my-2 md:my-4 md:w-2/5 text-gray-700 text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
-          <img className="w-full md:w-5/12 object-cover" src="https://image.freepik.com/free-photo/grey-blue-cars-put-each-other-cloudy-sky_181624-16862.jpg"/>
+          <p className="my-8 w-full md:w-2/4 text-gray-700 text-justify text-opacity-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue placerat tempus. Suspendisse eget ante eu nulla accumsan pulvinar sed quis ante.</p>
+          <img className="w-full md:w-2/4 object-cover" src="https://image.freepik.com/free-photo/grey-blue-cars-put-each-other-cloudy-sky_181624-16862.jpg"/>
         </div>
 
       </main>
