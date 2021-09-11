@@ -4,7 +4,7 @@ const  About = () => {
             <div className="px-14 pt-14 md:pb-14 bg-gray-50">
                 <div className="flex flex-wrap md:px-4">
                     <div className="w-full md:w-1/2  flex justify-center items-center">
-                        <img className="h-64 md:h-80 w-full md:w-full shadow-lg object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZG2_f_iX4KPXK5lkCgOnSRBhdLnCuW89cA&usqp=CAU"   />
+                        <img className="h-64 md:h-full w-full md:w-full shadow-lg object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZG2_f_iX4KPXK5lkCgOnSRBhdLnCuW89cA&usqp=CAU"   />
                     </div>
                     
                     <div className="flex flex-col w-full md:w-1/2 justify-center items-center md:pl-16">

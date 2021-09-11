@@ -15,9 +15,9 @@ export default function Cars() {
   }
 
   return (
-    <div className="p-4 ml-5">
+    <div className="w-11/12 2xl:w-5/6 mx-auto">
         {/* searchbar start */}
-        <div className="p-2 bg-gray-50">
+        <div className="bg-gray-50">
           <form onSubmit={handleSubmit} className="flex flex-row space-x-4">
             <div class="p-2 w-1/4">
               <div class="bg-white flex items-center rounded-full shadow-md">

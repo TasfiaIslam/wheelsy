@@ -39,8 +39,7 @@ function CarList(props) {
       );
       if (searchQuery.length != 0) {
         return (
-            <div className="px-4 pb-2">
-                {/* <h1 className="text-4xl my-4 text-center text-black">All Cars</h1> */}
+            <div className="mb-4 h-screen">
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                     {searchQuery.map((car) => (
                         <div className="max-w-sm rounded overflow-hidden shadow-md my-4" key={car.id}>

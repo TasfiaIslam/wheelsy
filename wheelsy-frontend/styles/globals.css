@@ -1,46 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
-body {
-  background: #f2f2f2;
-  color: #333;
-  font-family: "Nunito";
-}
-a {
-  color: #333;
-  text-decoration: none;
-}
-.content {
-  max-width: 960px;
-  margin: 0 auto;
-}
-nav {
-  margin: 10px auto 80px;
-  padding: 10px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border-bottom: 1px solid #ddd;
-}
-nav a {
-  margin-left: 12px;
-}
-nav .logo {
-  margin-right: auto;
-}
-footer {
-  display: block;
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 60px;
-  color: #777;
-  border-top: 1px solid #eaeaea;
-}
+@layer base {
+  a.nav-items{
+    @apply p-4 text-red-500 hover:text-red-800 cursor-pointer;
+  }
+  a.nav-items:last-child{
+    @apply pr-0;
+  }
+  .hero-container{
+    @apply bg-black bg-center bg-no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')
+  }
+  .hero-outer-wrapper{
+    @apply w-5/6 md:w-11/12 mx-auto flex flex-wrap overflow-hidden;
+  }
+  .hero-inner-wrapper{
+    @apply md:w-full md:h-auto overflow-hidden py-4;
+  }
+  .hero-inner-text{
+    @apply text-white bg-white rounded-lg my-6 p-10 bg-opacity-20 backdrop-filter backdrop-blur-sm;
+  }
+  
+  .footer-list{
+    @apply mt-4 flex flex-col items-center;
+  }
+  .footer-list li{
+    @apply text-center;
+  }
+  .footer-list:first-child{
+    @apply items-start;
+  }
+  .footer-list:last-child{
+    @apply items-end;
+  }
 
-.not-found {
-  text-align: center;
-}
-.not-found a{
-  color: #4979ff;
-  text-decoration: underline;
+  
+  .footer-bottom{
+    @apply w-5/6 md:w-11/12 2xl:w-5/6 mx-auto grid grid-cols-2 md:grid-cols-8 justify-center py-4;
+  }
+
+  .footer-list-label{
+    @apply text-gray-100 text-xl font-bold pb-2;
+  }
+  .footer-list ul{
+
+  }
+  .footer-list ul li{
+    @apply list-none cursor-pointer text-sm 2xl:text-base text-white hover:text-gray-400;
+  }
+  .footer-bottom-list{
+    @apply text-xs text-white text-center;
+  }
+  .footer-bottom-list{
+    @apply border-r border-white;
+  }
+  .footer-bottom-list:last-child{
+    @apply border-r-0;
+  }
+  @media only screen and (max-width: 540px) {
+
+    .footer-list{
+      @apply mt-4 flex flex-col items-center;
+    }
+    .footer-list:nth-child(odd) li{
+      @apply text-left;
+    }
+    .footer-list:nth-child(even) li{
+      @apply text-right;
+    }
+    .footer-list:nth-child(odd) li:last-child{
+      @apply mb-4;
+    }
+    .footer-list:nth-child(even) li:last-child{
+      @apply mb-4;
+    }
+    .footer-list:nth-child(odd){
+      @apply items-start;
+    }
+    .footer-list:nth-child(even){
+      @apply items-end;
+    }
+    .footer-bottom-list{
+      @apply mb-2;
+    }
+    .footer-bottom-list:nth-child(odd){
+      @apply text-left;
+    }
+    .footer-bottom-list:nth-child(even){
+      @apply text-right border-r-0;
+    }
+
+  }
 }
